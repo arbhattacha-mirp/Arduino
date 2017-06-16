@@ -23,13 +23,13 @@ void setup() {
   ServoX.attach(ServoXpin);
   ServoY.attach(ServoYpin);
   ServoX.write(90);
-  ServoY.write(95);
+  ServoY.write(90);
   pidX.SetMode(AUTOMATIC);
   pidY.SetMode(AUTOMATIC);
   pidX.SetOutputLimits(mn, mx);
   pidY.SetOutputLimits(mn, mx);
   pidX.SetSampleTime(sampleTime);
-   pidX.SetSampleTime(sampleTime);
+   pidY.SetSampleTime(sampleTime);
   
 
    
